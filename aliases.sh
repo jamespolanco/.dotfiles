@@ -23,6 +23,7 @@ function dbDump() {
 
 
 alias sub='open -a "/Applications/Sublime Text 3.app"'
+alias powr='powify restart'
 alias zt='zeus test'
 alias zta='zeus test spec'
 alias zc='zeus console'

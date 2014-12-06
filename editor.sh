@@ -7,7 +7,7 @@ function use_sublime () {
     if [ "$1" != "" ]; then
       sub $1
     else
-      sub .
+      subl .
     fi
   }
 }
