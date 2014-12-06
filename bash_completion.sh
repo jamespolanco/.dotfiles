@@ -1,10 +1,11 @@
-# Set git autocompletion and PS1 integration
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
+export HOMEBREW=`brew --prefix`
+
+# git bash completion
+if [ -f $HOMEBREW/etc/bash_completion.d/git-completion.bash ]; then
+  . $HOMEBREW/etc/bash_completion.d/git-completion.bash
 fi
 
-GIT_PS1_SHOWDIRTYSTATE=true
-
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
+# git PS1 function
+if [ -f $HOMEBREW/etc/bash_completion.d/git-prompt.sh ]; then
+  . $HOMEBREW/etc/bash_completion.d/git-prompt.sh
 fi
